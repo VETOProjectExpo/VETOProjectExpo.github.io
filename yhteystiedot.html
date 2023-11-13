@@ -28,29 +28,31 @@
     </div>
   <main>
     <h3>Ota yhteyttä:</h3>
-    <div class="container">
-      <form action="action_page.php">
     
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <form action="https://formspree.io/f/myyqakzj" method="POST">
     
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="enimi">Etunimi</label>
+        <input type="text" id="enimi" name="etunimi" placeholder="Etunimi">
     
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
+        <label for="snimi">Sukunimi</label>
+        <input type="text" id="snimi" name="sukunimi" placeholder="Sukunimi">
+
+        <label for="ynimi">Yritys</label>
+        <input type="text" id="ynimi" name="yrityksen nimi" placeholder="Yritys">
+    
+        <label for="contact">Miten haluat, että sinuun otetaan yhteyttä?</label>
+        <select id="contact" name="contact">
+          <option value="sposti">sähköpostitse</option>
+          <option value="puhelin">puhelimitse</option>
         </select>
     
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="subject">Tarjoa meille projektia tai pyydä yhteydenottoa.</label>
+        <textarea id="subject" name="subject" placeholder="Kuvaus projekti-ideasta tai muu kysely" style="height:200px"></textarea>
     
         <input type="submit" value="Submit">
     
       </form>
-    </div> 
+    
     
     <h3>Tapahtumapaikka</h3>
     <div class="map">
