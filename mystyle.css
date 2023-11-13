@@ -12,9 +12,8 @@ main {
   width:60%;
   margin-left:auto;
   margin-right:auto;
+  
 
- 
- 
 }
 .linkit {
   text-align: center;
@@ -176,10 +175,22 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #0c7663;
   padding: 20px;
+  width: 50%; /* Adjust the width as needed */
+  margin:auto;
+  
+   
 } 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make the form take the full width of the container */
+}
 .footer {
   background-color: #F1F1F1;
   text-align: center;
