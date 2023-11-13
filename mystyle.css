@@ -10,8 +10,7 @@ body {
 
 main {
   width:60%;
-  margin-left:auto;
-  margin-right:auto;
+  margin:auto;
   
 
 }
@@ -32,7 +31,7 @@ main {
 .topnav{
   display: flex;
   justify-content: center;
-  margin: 50px 5px;
+  margin: 10px 10px;
   gap: 100px;
   
 }
@@ -77,7 +76,7 @@ main {
   h3 {
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 300%;
+    font-size: 200%;
     padding-bottom: 0;
   }
   h4 {
@@ -106,9 +105,9 @@ main {
     flex-direction: row;
     gap:0px 50px;
     padding: 10px 50px 10px 50px;
-    margin: 10px 0px 0px 0px; /* top, right, bottom, left */ 
-    background: #1abc9c; /* green background */
-    color: rgb(0, 0, 0); /* white text color */
+    margin: auto; /* top, right, bottom, left */ 
+    background: #0c7663; /* green background */
+    color: #ffeabb /* white text color */
     
   }
   .header h2 {
@@ -118,27 +117,27 @@ main {
   }
 
   .header-center {
-    background: #1abc9c; /* green background */
+    background: #0c7663; /* green background */
+    padding: 10px 50px 10px 50px;
     color: rgb(0, 0, 0); /* white text color */
   }
   .header-center h2 {
-    color: rgb(0, 0, 0);
+    
     text-align: center;
-    background: #1abc9c; /* green background */
+    background: #0c7663; /* green background */
   }
   
 .flex-container {
   display:flex;
   justify-content: center;
   align-items: flex-start;
-  
+  margin:auto;
 }
 
 .text-section {
   flex: 1;
-  padding: 20px; 
-  
-  
+  padding: 10px;
+  width: 50%; 
 }
 
 .map {
@@ -160,7 +159,7 @@ main {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #faa530;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -170,7 +169,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #e74f09;
 }
 
 /* Add a background color and some padding around the form */
@@ -179,11 +178,10 @@ input[type=submit]:hover {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: #0c7663;
+  background-color: #f4bd42;
   padding: 20px;
   width: 50%; /* Adjust the width as needed */
   margin:auto;
-  
    
 } 
 form {
@@ -191,8 +189,31 @@ form {
   flex-direction: column;
   width: 100%; /* Make the form take the full width of the container */
 }
+
+.text-container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  align-content: center ;
+  justify-content: center;
+  font-size: 120%;
+ 
+}
+.timetable {
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  align-content: center ;
+  justify-content: center;
+  font-size: 120%;
+  
+  
+}
+
+  
 .footer {
   background-color: #F1F1F1;
   text-align: center;
   padding: 10px;
+  margin:auto;
   }
