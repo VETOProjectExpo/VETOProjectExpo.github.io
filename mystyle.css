@@ -3,93 +3,121 @@ body {
     color: hsl(0, 0%, 10%);
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
-    padding-bottom: 300px; /* Adjust the value as needed */
     margin:0;
-   
+    padding:0;
+    
 }
 
 main {
   width:60%;
   margin:auto;
-  
-
 }
+
 .linkit {
   text-align: center;
   align-items: center;
-
 }
+
 .linkit a {
-  margin: 50px; /* Adjust the spacing between icons */
+  margin: 50px;
 }
 
 .linkit img {
   width: 50px; /* Adjust the icon size as needed */
   height: auto;
 }
-/* Style the links inside the navigation bar */
+
 .topnav{
   display: flex;
   justify-content: center;
+  align-content:center;
   margin: 10px 10px;
-  gap: 100px;
-  
 }
 .topnav a {
     color: #000000;
-    padding: 10px 10px;
-    text-decoration: none;
+    padding: 10px 50px 10px 50px;
+    text-decoration:none;
     font-size: 17px;
 }
-/* Change the color of links on hover */
+
 .topnav a:hover {
     text-decoration-line: underline;
   }
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #ffffff;
   color: white;
 }
 .topnav img {
   width: 110px;
+  height:auto;
   padding: 0px 0px;
 }
+@media screen and (max-width: 768px) {
+  .topnav {
+      flex: row;
+  }
 
-  p {
-    color: rgb(0, 0, 0);
-    font-size: 100%;
+  .topnav a {
+      flex: 1 1 45%; /* Distribute the available width, adjust as needed */
+      margin: 10px; /* Add some space between links */
+      padding: 5px;
+  }
+  .header {
+    flex-direction: column;
+    gap: 0px 0;
+    text-align: center;
+    align-items:center;
+  }
+
+  .header h2 {
+    text-align: center;
+  }
+  .header p {
+    flex-direction: column;
+  }
+
+  .header-center {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+
+p {
+  color: rgb(0, 0, 0);
+  font-size: 100%;
     
 }
-  h1 {
-    color: #0c7663;
-    text-align: left;
-    font-size: 700%;
-    font-weight: 800; 
-    margin: 10px 10px 0px 50px; /* top, right, bottom, left */ 
+h1 {
+  color: #0c7663;
+  text-align: left;
+  font-size: 6.5vw;
+  font-weight: 800; 
+  margin: 10px 10px 0px 50px; /* top, right, bottom, left */ 
 }
   
-  h2 {
-    color: rgb(0, 0, 0);
-    font-size: 400%;
-  }
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 400%;
+}
 
-  h3 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 200%;
-    padding-bottom: 0;
-  }
-  h4 {
-    color: rgb(0, 0, 0);
-    font-size: 200%;
-    padding-bottom: 0;
-    margin: 0;
-  }
+h3 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 200%;
+  padding-bottom: 0;
+}
+h4 {
+  color: rgb(0, 0, 0);
+  font-size: 200%;
+  padding-bottom: 0;
+  margin: 0;
+}
 
   .indextext {
     text-align: left;
     padding: 0px 0px 0px 50px;
-    font-size: 150%;
+    font-size: 1.0625em;
     text-align: left;
   }
   
@@ -103,22 +131,23 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap:0px 50px;
-    padding: 10px 50px 10px 50px;
-    margin: auto; /* top, right, bottom, left */ 
-    background: #0c7663; /* green background */
-    color: #ffeabb /* white text color */
+    gap:0px 0px;
+    padding: 0.5rem 3.2rem;
+    margin: auto;
+    background: #0c7663;
+    color: #ffeabb 
     
   }
   .header h2 {
     color: rgb(0, 0, 0);
     text-align: left;
+    padding: 0.5rem 3.2rem;
     
   }
 
   .header-center {
     background: #0c7663; /* green background */
-    padding: 10px 50px 10px 50px;
+    padding: 0.5rem 3.2rem;
     color: rgb(0, 0, 0); /* white text color */
   }
   .header-center h2 {
@@ -206,8 +235,31 @@ form {
   align-content: center ;
   justify-content: center;
   font-size: 120%;
-  
-  
+}
+.topnav, h1, .date-image, .indextext {
+  position: relative;
+  z-index: 2; /* Set a higher z-index than the image */
+}
+.date-image {
+  margin: 0px 0px 0px 50px; 
+  height: auto;
+  width: 30%;
+}
+.date-image img {
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+.bottom-image {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.bottom-image img {
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
 }
 
   
