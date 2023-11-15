@@ -231,7 +231,7 @@ form {
 .timetable {
   display: flex;
   flex-direction:column;
-  align-items: flex-start;
+  align-items: center;
   align-content: center ;
   justify-content: center;
   font-size: 120%;
