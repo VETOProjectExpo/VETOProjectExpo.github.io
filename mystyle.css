@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
     background-color: #fff8ee;
     color: hsl(0, 0%, 10%);
@@ -5,6 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin:0;
     padding:0;
+    padding-bottom: 7rem;
     
 }
 
@@ -53,47 +57,20 @@ main {
   height:auto;
   padding: 0px 0px;
 }
-@media screen and (max-width: 768px) {
-  .topnav {
-      flex: row;
-  }
-
-  .topnav a {
-      flex: 1 1 45%; /* Distribute the available width, adjust as needed */
-      margin: 10px; /* Add some space between links */
-      padding: 5px;
-  }
-  .header {
-    flex-direction: column;
-    gap: 0px 0;
-    text-align: center;
-    align-items:center;
-  }
-
-  .header h2 {
-    text-align: center;
-  }
-  .header p {
-    flex-direction: column;
-  }
-
-  .header-center {
-    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
-  }
-}
 
 
 p {
   color: rgb(0, 0, 0);
   font-size: 100%;
-    
 }
+
 h1 {
   color: #0c7663;
   text-align: left;
-  font-size: 6.5vw;
+  font-size: 6.7vw;
   font-weight: 800; 
-  margin: 10px 10px 0px 50px; /* top, right, bottom, left */ 
+  padding: 2rem 0rem 0rem 3rem; /* top, right, bottom, left */ 
+  margin: 0;
 }
   
 h2 {
@@ -114,47 +91,44 @@ h4 {
   margin: 0;
 }
 
-  .indextext {
-    text-align: left;
-    padding: 0px 0px 0px 50px;
-    font-size: 1.0625em;
-    text-align: left;
-  }
+.indextext {
+  text-align: left;
+  padding: 0rem 0rem 0rem 3rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
   
-  .indextext p {
-    color: #c47a0c;
+.indextext p {
+  color: #c47a0c;
     
-  }
+}
 
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap:0px 0px;
-    padding: 0.5rem 3.2rem;
-    margin: auto;
-    background: #0c7663;
-    color: #ffeabb 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.5rem;
+  background: #0c7663;
+  color: #ffeabb 
     
-  }
-  .header h2 {
-    color: rgb(0, 0, 0);
-    text-align: left;
-    padding: 0.5rem 3.2rem;
+}
+.header h2 {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 0.5rem 2rem;
     
-  }
+}
 
-  .header-center {
-    background: #0c7663; /* green background */
-    padding: 0.5rem 3.2rem;
-    color: rgb(0, 0, 0); /* white text color */
-  }
-  .header-center h2 {
-    
-    text-align: center;
-    background: #0c7663; /* green background */
-  }
+.header-center {
+  background: #0c7663; /* green background */
+  padding: 0.5rem;
+  color: rgb(0, 0, 0); /* white text color */
+  
+}
+.header-center h2 {
+  text-align: center;
+}
   
 .flex-container {
   display:flex;
@@ -174,6 +148,7 @@ h4 {
   align-items: center;
   justify-content: center;
 }
+
  /* Style inputs with type="text", select elements and textareas */
  input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -221,11 +196,12 @@ form {
 
 .text-container {
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   align-items: center;
   align-content: center ;
   justify-content: center;
   font-size: 120%;
+  padding: 1.5rem; 
  
 }
 .timetable {
@@ -241,12 +217,15 @@ form {
   z-index: 2; /* Set a higher z-index than the image */
 }
 .date-image {
-  margin: 0px 0px 0px 50px; 
+  padding: 0rem 0rem 0rem 2rem;
+    /* top, right, bottom, left */ 
   height: auto;
-  width: 30%;
+  
+  
 }
 .date-image img {
   max-width: 100%;
+  width:45rem;
   height: auto;
   pointer-events: none;
 }
@@ -260,6 +239,64 @@ form {
   max-width: 100%;
   height: auto;
   pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+  .topnav {
+      flex: row;
+  }
+
+  .topnav a {
+      flex: 1 1 45%; /* Distribute the available width, adjust as needed */
+      margin: 0.1rem; /* Add some space between links */
+      padding: 0.5rem;
+  }
+  .header {
+    
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    padding:0.5rem 0.1rem;
+    margin:0;
+    width:100%;
+  }
+
+  .header h2 {
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    
+    margin:0rem;
+    
+    justify-content:center;
+  }
+  .header p {
+    
+    justify-content:center;
+    
+    margin:0rem;
+  }
+
+  .header-center {
+    box-sizing: border-box;
+    justify-content:center;
+    width:100%;
+    padding: 0.5rem 0.1rem; /* Adjust padding for smaller screens */
+  }
+  .header-center h2 {
+    text-align: center;
+  }
+  .text-section {
+    width: 80%;
+  }
+  .map iframe {
+    width: 80%;
+    
+  }
+  .container {
+    width: 80%;
+  }
 }
 
   
